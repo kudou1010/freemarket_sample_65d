@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   #トップページ
-  # root to: "items#index"
-  # resources :items, only: [:index, :new, :create]
+  root to: "items#index"
+  resources :items, only: [:index, :new, :create]
 
   # ログイン画面表示
   # root to: "login#index"
@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   # root to: "my_page#index"
 
   # ユーザーマイページ編集画面(マイページ完成次第ルーティング編集)
-  root to: "edit_profile#index"
+  # root to: "edit_profile#index"
 
   # ログアウト画面
   # root to: "logout#index"
