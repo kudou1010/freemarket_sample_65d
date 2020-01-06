@@ -1,10 +1,35 @@
 crumb :root do
-  link "Home", root_path
+  link "メルカリ", root_path
 end
 
-# crumb :projects do
-#   link "Projects", projects_path
-# end
+crumb :mypage do
+  link "マイページ", root_path
+  parent :root
+end
+
+crumb :editProfile do
+  link "プロフィール", root_path
+  parent :mypage
+end
+
+crumb :profileInformation do
+  link "本人情報の確認", root_path
+  parent :mypage
+end
+
+crumb :logout do
+  link "ログアウト", root_path
+  parent :mypage
+end
+
+crumb :payment do
+  link "支払い方法", root_path
+  parent :mypage
+end
+
+
+
+
 
 # crumb :project do |project|
 #   link project.name, project_path(project)
