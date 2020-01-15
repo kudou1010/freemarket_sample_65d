@@ -20,4 +20,5 @@ class User < ApplicationRecord
   validates :first_name_kana,    format: { with: VALID_KANA_REGEX, message: "はカタカナで入力して下さい" }
   validates :last_name_kana,    format: { with: VALID_KANA_REGEX, message: "はカタカナで入力して下さい" }
   validates :birthday,              presence: { message: "を入力してください" }
+  mount_uploader :avatar, AvatarUploader
 end 
