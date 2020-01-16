@@ -2,8 +2,12 @@
   = render 'shared/header'
       
 %body
-  .images
+  .slider
     = image_tag 'toppage/free.image-1.jpg', height: '390px', width: '100%', class: 'top-photo'
+
+  
+  -# .images
+  -#   = image_tag 'toppage/free.image-1.jpg', height: '390px', width: '100%', class: 'top-photo'
     -# %img(src="スクリーンショット 2019-12-19 19.03.35.png" class="top-photo")/
   .bar
     %div 人気のカテゴリー
@@ -34,8 +38,9 @@
                     %p.price 
                       ¥
                       =item.price 
-                    %p.name 
-                      =item.name
+                    .name 
+                      .nameText
+                        =item.name
       -# メンズカテゴリー
   .category__box
     .women
@@ -57,8 +62,9 @@
                     %p.price 
                       ¥
                       =item.price 
-                    %p.name 
-                      =item.name
+                    .name 
+                      .nameText
+                        =item.name
     -# カメラカテゴリー
   .category__box
     .women
@@ -80,8 +86,9 @@
                     %p.price 
                       ¥
                       =item.price 
-                    %p.name 
-                      =item.name
+                    .name 
+                      .nameText
+                        =item.name
     -# おもちゃカテゴリー
   .category__box
     .women
@@ -103,8 +110,9 @@
                     %p.price 
                       ¥
                       =item.price 
-                    %p.name 
-                      =item.name
+                    .name 
+                      .nameText
+                        =item.name
   
 .bar
   %div 人気のカテゴリー
@@ -136,8 +144,9 @@
                     %p.price 
                       ¥
                       =item.price 
-                    %p.name 
-                      =item.name
+                    .name 
+                      .nameText
+                        =item.name
       -# ビトンカテゴリー
   .category__box
     .chanel
@@ -158,8 +167,9 @@
                   %p.price 
                     ¥
                     =item.price 
-                  %p.name 
-                    =item.name
+                  .name 
+                    .nameText
+                      =item.name
     -# シュプリームカテゴリー
   .category__box
     .chanel
@@ -180,8 +190,9 @@
                   %p.price 
                     ¥
                     =item.price 
-                  %p.name 
-                    =item.name
+                  .name 
+                    .nameText
+                      =item.name
     -# ナイキカテゴリー
   .category__box
     .chanel
@@ -202,8 +213,9 @@
                   %p.price 
                     ¥
                     =item.price 
-                  %p.name 
-                    =item.name
+                  .name 
+                    .nameText
+                      =item.name
 %footer
   = render 'shared/footer'
 = render 'shared/exhibition-btn'
